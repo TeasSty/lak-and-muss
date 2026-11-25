@@ -1,3 +1,5 @@
+import { asset } from '../lib/asset'
+
 export function Masters() {
   return (
     <section className="masters" id="masters" aria-labelledby="masters-title">
@@ -25,10 +27,10 @@ export function Masters() {
           </li>
         </ul>
         <div className="masters__strip" aria-hidden="true">
-          <img src="/images/gallery-01.jpg" alt="" width={640} height={853} loading="lazy" />
-          <img src="/images/gallery-02.jpg" alt="" width={640} height={853} loading="lazy" />
-          <img src="/images/gallery-03.jpg" alt="" width={640} height={853} loading="lazy" />
-          <img src="/images/hero.jpg" alt="" width={640} height={853} loading="lazy" />
+          <img src={asset('images/gallery-01.jpg')} alt="" width={640} height={853} loading="lazy" />
+          <img src={asset('images/gallery-02.jpg')} alt="" width={640} height={853} loading="lazy" />
+          <img src={asset('images/gallery-03.jpg')} alt="" width={640} height={853} loading="lazy" />
+          <img src={asset('images/hero.jpg')} alt="" width={640} height={853} loading="lazy" />
         </div>
       </div>
     </section>

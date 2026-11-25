@@ -1,8 +1,10 @@
+import { asset } from '../lib/asset'
+
 export function Header() {
   return (
     <header className="site-header">
       <a className="site-header__brand" href="#top" aria-label="Лак&Мусс — наверх">
-        <img src="/images/logo-m.jpg" alt="" width={40} height={40} />
+        <img src={asset('images/logo-m.jpg')} alt="" width={40} height={40} />
         <span>Лак&Мусс</span>
       </a>
       <nav className="site-header__nav" aria-label="Разделы">

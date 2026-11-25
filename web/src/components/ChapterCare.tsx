@@ -1,9 +1,11 @@
+import { asset } from '../lib/asset'
+
 export function ChapterCare() {
   return (
     <section className="chapter chapter--care" id="care" aria-labelledby="care-title">
       <figure className="chapter__solo">
         <img
-          src="/images/care-01.jpg"
+          src={asset('images/care-01.jpg')}
           alt="Результат окрашивания с подобранным уходом"
           width={1080}
           height={1440}

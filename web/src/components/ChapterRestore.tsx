@@ -1,3 +1,5 @@
+import { asset } from '../lib/asset'
+
 export function ChapterRestore() {
   return (
     <section
@@ -17,11 +19,11 @@ export function ChapterRestore() {
       </div>
       <div className="compare" aria-label="До и после">
         <figure className="compare__panel">
-          <img src="/images/restore-01.jpg" alt="Волосы до восстановления" width={720} height={960} loading="lazy" />
+          <img src={asset('images/restore-01.jpg')} alt="Волосы до восстановления" width={720} height={960} loading="lazy" />
           <figcaption>До</figcaption>
         </figure>
         <figure className="compare__panel">
-          <img src="/images/restore-02.jpg" alt="Волосы после восстановления и цвета" width={720} height={960} loading="lazy" />
+          <img src={asset('images/restore-02.jpg')} alt="Волосы после восстановления и цвета" width={720} height={960} loading="lazy" />
           <figcaption>После</figcaption>
         </figure>
       </div>

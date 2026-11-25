@@ -1,3 +1,5 @@
+import { asset } from '../lib/asset'
+
 export function ChapterColor() {
   return (
     <section className="chapter chapter--color" id="color" aria-labelledby="color-title">
@@ -27,13 +29,13 @@ export function ChapterColor() {
       </div>
       <div className="chapter__gallery" aria-label="Работы по цвету">
         <figure className="shot shot--tall">
-          <img src="/images/color-01.jpg" alt="Розово-медный боб, сложное окрашивание" width={720} height={960} loading="lazy" />
+          <img src={asset('images/color-01.jpg')} alt="Розово-медный боб, сложное окрашивание" width={720} height={960} loading="lazy" />
         </figure>
         <figure className="shot">
-          <img src="/images/color-02.jpg" alt="Результат сложного окрашивания" width={720} height={960} loading="lazy" />
+          <img src={asset('images/color-02.jpg')} alt="Результат сложного окрашивания" width={720} height={960} loading="lazy" />
         </figure>
         <figure className="shot shot--wide">
-          <img src="/images/color-03.jpg" alt="Strawberry blonde боб в студии" width={720} height={960} loading="lazy" />
+          <img src={asset('images/color-03.jpg')} alt="Strawberry blonde боб в студии" width={720} height={960} loading="lazy" />
         </figure>
       </div>
     </section>

@@ -1,10 +1,12 @@
+import { asset } from '../lib/asset'
+
 export function Hero() {
   return (
     <section className="hero" id="top" aria-label="Главный экран">
       <div className="hero__media" aria-hidden="true">
         <img
           className="hero__still"
-          src="/images/gallery-04.jpg"
+          src={asset('images/gallery-04.jpg')}
           alt=""
           width={1280}
           height={1707}
@@ -15,7 +17,7 @@ export function Hero() {
       <div className="hero__content">
         <img
           className="hero__mark"
-          src="/images/logo-m.jpg"
+          src={asset('images/logo-m.jpg')}
           alt="Монограмма Лак&Мусс"
           width={120}
           height={120}

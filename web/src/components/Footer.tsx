@@ -1,8 +1,10 @@
+import { asset } from '../lib/asset'
+
 export function Footer() {
   return (
     <footer className="site-footer">
       <div className="site-footer__brand">
-        <img src="/images/logo-m.jpg" alt="" width={36} height={36} />
+        <img src={asset('images/logo-m.jpg')} alt="" width={36} height={36} />
         <div>
           <strong>Лак&Мусс</strong>
           <span>студия красоты</span>

@@ -8,8 +8,10 @@ export function Hero() {
           className="hero__still"
           src={asset('images/color-03.jpg')}
           alt=""
-          width={1280}
-          height={1707}
+          width={720}
+          height={960}
+          decoding="async"
+          fetchPriority="high"
         />
         <div className="hero__veil" />
       </div>

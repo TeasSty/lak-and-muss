@@ -6,7 +6,7 @@ export function Hero() {
       <div className="hero__media" aria-hidden="true">
         <img
           className="hero__still"
-          src={asset('images/gallery-04.jpg')}
+          src={asset('images/color-03.jpg')}
           alt=""
           width={1280}
           height={1707}
@@ -15,15 +15,17 @@ export function Hero() {
       </div>
 
       <div className="hero__content">
-        <img
-          className="hero__mark"
-          src={asset('images/logo-m.jpg')}
-          alt="Монограмма Лак&Мусс"
-          width={120}
-          height={120}
-        />
-        <p className="hero__brand">Лак&Мусс</p>
-        <p className="hero__eyebrow">студия красоты · Нижний Тагил</p>
+        <div className="hero__brand-block">
+          <img
+            className="hero__mark"
+            src={asset('images/logo-m.jpg')}
+            alt=""
+            width={120}
+            height={120}
+          />
+          <p className="hero__brand">Лак&Мусс</p>
+          <p className="hero__eyebrow">студия красоты · Нижний Тагил</p>
+        </div>
         <h1 className="hero__title">Сложный цвет. Без потери качества.</h1>
         <p className="hero__lead">
           AirTouch, исправление цвета и восстановление волос.
